@@ -6,4 +6,4 @@ klient = Customer("Jan", "Kowalski", "jan@op.pl", "500-600-700")
 
 serwis_taxi = Scooter_Service()
 
-zamowiony_pojazd = klient.order_transport(serwis_scooter, "Taxi")
+zamowiony_pojazd = klient.order_transport(serwis_scooter, "Scooter")
