@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 from transport import Transport, Bike, Scooter, Taxi
 
-
 class TransportServices(ABC):
     """
     Abstrakcyjna klasa bazowa reprezentująca usługę transportową.
@@ -49,7 +48,6 @@ class TransportServices(ABC):
         pass
 
     def order_transport(self):
-
         """
         Obsługuje proces zamówienia transportu przez klienta.
 
@@ -61,12 +59,20 @@ class TransportServices(ABC):
 
         transport = self.create_transport()
 
+        Sprawdza dostępność pojazdu. Jeśli jest dostępny, tworzy go za pomocą
+        metody fabrykującej, wyświetla szczegóły zamówienia i ustawia dostępność
+        na False. W przeciwnym wypadku informuje o braku dostępności.
+        """
         if self.available:
+            transport = self.create_transport()
+
             print(f"Typ pojazdu: {transport.vehicle_type()}")
             print(f"Przewidywany czas przyjazdu: {transport.arrival_time()}")
             print(f"Przewidywany czas podróży: {transport.travel_time()}")
+
+            self.available = False
         else:
-            print(f"Przepraszamy, transport {self.transport_name()} jest obecnie niedostępny.")
+            print(f"Przepraszamy, usługa {self.transport_name()} jest obecnie niedostępna.")
 
 class BikeService(TransportServices):
     """
