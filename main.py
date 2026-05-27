@@ -1,9 +1,11 @@
-from customer import Customer         # Import Twojej klasy
-from services import TaxiService      # Import klasy zrobionej przez drugą osobę
-from transport import Taxi            # Import klasy zrobionej przez drugą osobę
+from customer import Customer
+from services import ScooterService
 
+# 1. Tworzymy klienta
 klient = Customer("Jan", "Kowalski", "jan@op.pl", "500-600-700")
 
-serwis_taxi = Scooter_Service()
+# 2. POPRAWKA: Poprawna nazwa zmiennej dla serwisu hulajnóg
+serwis_scootera = ScooterService()
 
-zamowiony_pojazd = klient.order_transport(serwis_scooter, "Scooter")
+# 3. POPRAWKA: Przekazujemy właściwą zmienną (bez zbędnego tekstowego "Scooter")
+zamowiony_pojazd = klient.order_transport(serwis_scootera)

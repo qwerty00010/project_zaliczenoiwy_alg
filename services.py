@@ -1,5 +1,9 @@
 from abc import ABC, abstractmethod
+<<<<<<< HEAD
 from transport import Transport, Bike
+=======
+from transport import Transport, Bike, Scooter, Taxi
+>>>>>>> 6b4772d1de89fc636b37ca55389592da67a3d0a9
 
 class TransportServices(ABC):
     """
