@@ -1,0 +1,23 @@
+# Pamięć podręczna Pythona (zapobiega błędowi z cache)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Środowisko wirtualne (jeśli tworzyliście venv w folderze projektu)
+.venv/
+venv/
+ENV/
+
+# Pliki konfiguracyjne edytorów kodu
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Pliki systemowe (ukryte pliki systemów operacyjnych)
+.DS_Store
+Thumbs.db
