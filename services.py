@@ -7,21 +7,14 @@ class TransportServices(ABC):
 
     Definiuje wspólny interfejs dla wszystkich konkretnych usług w systemie,
     przechowuje informacje o dostępności floty oraz deklaruje metodę fabrykującą.
-
     """
 
     def __init__(self):
-        """
-
-        Inicjalizuje usługę transportową, ustawiając dostępność domyślnie na True.
-
-        """
-
+        """Inicjalizuje usługę transportową, ustawiając dostępność domyślnie na True."""
         self.available = True
 
     @abstractmethod
     def create_transport(self) -> Transport:
-
         """
         Metoda fabrykująca (Factory Method).
 
@@ -29,35 +22,23 @@ class TransportServices(ABC):
         konkretny obiekt klasy Transport.
 
         Returns:
-        Transport: Instancja konkretnego środka transportu.
-
+            Transport: Instancja konkretnego środka transportu.
         """
-
         pass
 
     @abstractmethod
     def transport_name(self) -> str:
-
         """
         Zwraca nazwę typu transportu obsługiwanego przez dany serwis.
 
         Returns:
             str: Nazwa transportu (np. "Bike", "Taxi", "Scooter").
         """
-
         pass
 
     def order_transport(self):
         """
         Obsługuje proces zamówienia transportu przez klienta.
-
-        prawdza dostępność pojazdu. Jeśli jest dostępny, tworzy go za pomocą
-        metody fabrykującej i wyświetla szczegóły zamówienia. W przeciwnym wypadku
-        informuje użytkownika o braku dostępności pojazdów.
-
-        """
-
-        transport = self.create_transport()
 
         Sprawdza dostępność pojazdu. Jeśli jest dostępny, tworzy go za pomocą
         metody fabrykującej, wyświetla szczegóły zamówienia i ustawia dostępność
@@ -71,8 +52,11 @@ class TransportServices(ABC):
             print(f"Przewidywany czas podróży: {transport.travel_time()}")
 
             self.available = False
+            return transport
         else:
             print(f"Przepraszamy, usługa {self.transport_name()} jest obecnie niedostępna.")
+            return None
+
 
 class BikeService(TransportServices):
     """
@@ -82,10 +66,9 @@ class BikeService(TransportServices):
         """
         Tworzy i zwraca obiekt reprezentujący rower.
 
-        eturns:
+        Returns:
             Transport: Instancja klasy Bike.
         """
-
         return Bike()
 
     def transport_name(self) -> str:
@@ -95,7 +78,6 @@ class BikeService(TransportServices):
         Returns:
             str: "Bike"
         """
-
         return "Bike"
 
 
@@ -107,17 +89,18 @@ class ScooterService(TransportServices):
         """
         Tworzy i zwraca obiekt reprezentujący hulajnogę.
 
-        Wykorzystuje import lokalny, aby uniknąć błędów ładowania modułu
-        przed pełną implementacją klas w pliku transport.py.
-
         Returns:
             Transport: Instancja klasy Scooter.
         """
-
-        from transport import Scooter
         return Scooter()
 
     def transport_name(self) -> str:
+        """
+        Zwraca nazwę usługi.
+
+        Returns:
+            str: "Scooter"
+        """
         return "Scooter"
 
 
@@ -129,14 +112,16 @@ class TaxiService(TransportServices):
         """
         Tworzy i zwraca obiekt reprezentujący taksówkę.
 
-        Wykorzystuje import lokalny, aby uniknąć błędów ładowania modułu
-        przed pełną implementacją klas w pliku transport.py.
-
         Returns:
             Transport: Instancja klasy Taxi.
         """
-        from transport import Taxi
         return Taxi()
 
     def transport_name(self) -> str:
+        """
+        Zwraca nazwę usługi.
+
+        Returns:
+            str: "Taxi"
+        """
         return "Taxi"
