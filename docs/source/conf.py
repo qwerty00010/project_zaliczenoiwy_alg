@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 project = 'System Zamawiania Transportu'
 copyright = '2026, Zespol Projektowy'
-author = 'Zespol Projektowy'
+author = 'SI, BO, TK'
 
 version = '1.0'
 release = '1.0'
@@ -22,8 +22,7 @@ release = '1.0'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon'
 ]
 
 templates_path = ['_templates']
@@ -34,6 +33,6 @@ language = 'pl'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
