@@ -116,3 +116,15 @@ class Taxi(Transport):
         Zwraca przewidywany czas podróży taksówką.
         """
         return "10 minutes"
+
+### A. Nazewnictwo (Naming)
+### Status: Idealnie. Nazwy klas i metod są intuicyjne, w języku angielskim (dobra praktyka w programowaniu) i wprost odzwierciedlają swoje przeznaczenie biznesowe.
+
+### B. Czytelność kodu (Readability)
+### Status: Bardzo dobry. Zastosowanie potrójnych cudzysłowów (""") dla dokumentacji klas (docstrings) oraz precyzyjne określenie typów zwracanych danych (-> str) sprawiają, że kod jest czytelny dla każdego członka zespołu oraz systemów automatycznego generowania dokumentacji.
+
+### C. Struktura projektu (Project Structure)
+### Status: Poprawny. Moduł wydziela warstwę logiczną pojazdów do dedykowanego pliku transport.py. Stanowi to czysty fundament pod wzorzec Factory Method, izolując reprezentację danych od logiki ich tworzenia.
+
+### D. Poprawność implementacji (Implementation Correctness)
+### Status: Poprawny. Klasy poprawnie dziedziczą po klasie abstrakcyjnej Transport i nadpisują wszystkie wymagane metody oznaczone dekoratorem @abstractmethod. Próba stworzenia instancji bez nadpisania którejś z metod wyrzuci błąd, co zabezpiecza aplikację przed błędami logicznymi.
