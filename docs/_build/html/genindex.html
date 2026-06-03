@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+
+
+<html lang="pl" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indeks &#8212; System Zamawiania Transportu 1.0 - dokumentacja</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=6c2f3ff2"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="_static/translations.js?v=2827c288"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="index" title="Indeks" href="#" />
+    <link rel="search" title="Szukaj" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="pl"/>
+  <meta name="docsearch:version" content="1.0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">System Zamawiania Transportu 1.0 - dokumentacja</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Szukaj" aria-label="Szukaj" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Szukaj</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Spis Treści:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pattern.html">Wzorzec Projektowy: Metoda Fabrykująca (Factory Method)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Instrukcja Uruchomienia i Przykłady</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Opis Modułów i Klas</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Pełny ekran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Szukaj" aria-label="Szukaj" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+
+<h1 id="index">Indeks</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#transport.Bike.arrival_time">arrival_time() (transport.Bike metoda)</a>, <a href="transport.html#transport.Bike.arrival_time">[1]</a>
+
+      <ul>
+        <li><a href="modules.html#transport.Scooter.arrival_time">(transport.Scooter metoda)</a>, <a href="transport.html#transport.Scooter.arrival_time">[1]</a>
+</li>
+        <li><a href="modules.html#transport.Taxi.arrival_time">(transport.Taxi metoda)</a>, <a href="transport.html#transport.Taxi.arrival_time">[1]</a>
+</li>
+        <li><a href="modules.html#transport.Transport.arrival_time">(transport.Transport metoda)</a>, <a href="transport.html#transport.Transport.arrival_time">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#transport.Bike">Bike (klasa w module transport)</a>, <a href="transport.html#transport.Bike">[1]</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#services.BikeService">BikeService (klasa w module services)</a>, <a href="services.html#services.BikeService">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#services.BikeService.create_transport">create_transport() (services.BikeService metoda)</a>, <a href="services.html#services.BikeService.create_transport">[1]</a>
+
+      <ul>
+        <li><a href="modules.html#services.ScooterService.create_transport">(services.ScooterService metoda)</a>, <a href="services.html#services.ScooterService.create_transport">[1]</a>
+</li>
+        <li><a href="modules.html#services.TaxiService.create_transport">(services.TaxiService metoda)</a>, <a href="services.html#services.TaxiService.create_transport">[1]</a>
+</li>
+        <li><a href="modules.html#services.TransportServices.create_transport">(services.TransportServices metoda)</a>, <a href="services.html#services.TransportServices.create_transport">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    customer
+
+      <ul>
+        <li><a href="customer.html#module-customer">module</a>, <a href="modules.html#module-customer">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="customer.html#customer.Customer">Customer (klasa w module customer)</a>, <a href="modules.html#customer.Customer">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="customer.html#customer.Customer.display_history">display_history() (customer.Customer metoda)</a>, <a href="modules.html#customer.Customer.display_history">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    main
+
+      <ul>
+        <li><a href="main.html#module-main">module</a>
+</li>
+      </ul></li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="customer.html#module-customer">customer</a>, <a href="modules.html#module-customer">[1]</a>
+</li>
+        <li><a href="main.html#module-main">main</a>
+</li>
+        <li><a href="modules.html#module-services">services</a>, <a href="services.html#module-services">[1]</a>
+</li>
+        <li><a href="test_osoba1.html#module-test_osoba1">test_osoba1</a>
+</li>
+        <li><a href="test_osoba3.html#module-test_osoba3">test_osoba3</a>
+</li>
+        <li><a href="modules.html#module-transport">transport</a>, <a href="transport.html#module-transport">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="customer.html#customer.Customer.order_transport">order_transport() (customer.Customer metoda)</a>, <a href="modules.html#customer.Customer.order_transport">[1]</a>
+
+      <ul>
+        <li><a href="modules.html#services.TransportServices.order_transport">(services.TransportServices metoda)</a>, <a href="services.html#services.TransportServices.order_transport">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#transport.Scooter">Scooter (klasa w module transport)</a>, <a href="transport.html#transport.Scooter">[1]</a>
+</li>
+      <li><a href="modules.html#services.ScooterService">ScooterService (klasa w module services)</a>, <a href="services.html#services.ScooterService">[1]</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    services
+
+      <ul>
+        <li><a href="modules.html#module-services">module</a>, <a href="services.html#module-services">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.setUp">setUp() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#transport.Taxi">Taxi (klasa w module transport)</a>, <a href="transport.html#transport.Taxi">[1]</a>
+</li>
+      <li><a href="modules.html#services.TaxiService">TaxiService (klasa w module services)</a>, <a href="services.html#services.TaxiService">[1]</a>
+</li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.test_bike_methods_output">test_bike_methods_output() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.test_factory_method_creates_correct_objects">test_factory_method_creates_correct_objects() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+      <li><a href="test_osoba3.html#test_osoba3.test_inheritance">test_inheritance() (w module test_osoba3)</a>
+</li>
+      <li><a href="test_osoba3.html#test_osoba3.test_multiple_customers">test_multiple_customers() (w module test_osoba3)</a>
+</li>
+      <li>
+    test_osoba1
+
+      <ul>
+        <li><a href="test_osoba1.html#module-test_osoba1">module</a>
+</li>
+      </ul></li>
+      <li>
+    test_osoba3
+
+      <ul>
+        <li><a href="test_osoba3.html#module-test_osoba3">module</a>
+</li>
+      </ul></li>
+      <li><a href="test_osoba3.html#test_osoba3.test_ride_history">test_ride_history() (w module test_osoba3)</a>
+</li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.test_scooter_methods_output">test_scooter_methods_output() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.test_taxi_methods_output">test_taxi_methods_output() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.test_transport_delivery_when_available">test_transport_delivery_when_available() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem.test_transport_delivery_when_unavailable">test_transport_delivery_when_unavailable() (test_osoba1.TestTransportSystem metoda)</a>
+</li>
+      <li><a href="test_osoba1.html#test_osoba1.TestTransportSystem">TestTransportSystem (klasa w module test_osoba1)</a>
+</li>
+      <li>
+    transport
+
+      <ul>
+        <li><a href="modules.html#module-transport">module</a>, <a href="transport.html#module-transport">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="modules.html#transport.Transport">Transport (klasa w module transport)</a>, <a href="transport.html#transport.Transport">[1]</a>
+</li>
+      <li><a href="modules.html#services.BikeService.transport_name">transport_name() (services.BikeService metoda)</a>, <a href="services.html#services.BikeService.transport_name">[1]</a>
+
+      <ul>
+        <li><a href="modules.html#services.ScooterService.transport_name">(services.ScooterService metoda)</a>, <a href="services.html#services.ScooterService.transport_name">[1]</a>
+</li>
+        <li><a href="modules.html#services.TaxiService.transport_name">(services.TaxiService metoda)</a>, <a href="services.html#services.TaxiService.transport_name">[1]</a>
+</li>
+        <li><a href="modules.html#services.TransportServices.transport_name">(services.TransportServices metoda)</a>, <a href="services.html#services.TransportServices.transport_name">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="modules.html#services.TransportServices">TransportServices (klasa w module services)</a>, <a href="services.html#services.TransportServices">[1]</a>
+</li>
+      <li><a href="modules.html#transport.Bike.travel_time">travel_time() (transport.Bike metoda)</a>, <a href="transport.html#transport.Bike.travel_time">[1]</a>
+
+      <ul>
+        <li><a href="modules.html#transport.Scooter.travel_time">(transport.Scooter metoda)</a>, <a href="transport.html#transport.Scooter.travel_time">[1]</a>
+</li>
+        <li><a href="modules.html#transport.Taxi.travel_time">(transport.Taxi metoda)</a>, <a href="transport.html#transport.Taxi.travel_time">[1]</a>
+</li>
+        <li><a href="modules.html#transport.Transport.travel_time">(transport.Transport metoda)</a>, <a href="transport.html#transport.Transport.travel_time">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.html#transport.Bike.vehicle_type">vehicle_type() (transport.Bike metoda)</a>, <a href="transport.html#transport.Bike.vehicle_type">[1]</a>
+
+      <ul>
+        <li><a href="modules.html#transport.Scooter.vehicle_type">(transport.Scooter metoda)</a>, <a href="transport.html#transport.Scooter.vehicle_type">[1]</a>
+</li>
+        <li><a href="modules.html#transport.Taxi.vehicle_type">(transport.Taxi metoda)</a>, <a href="transport.html#transport.Taxi.vehicle_type">[1]</a>
+</li>
+        <li><a href="modules.html#transport.Transport.vehicle_type">(transport.Transport metoda)</a>, <a href="transport.html#transport.Transport.vehicle_type">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Przez SI, BO, TK
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, Zespol Projektowy.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
